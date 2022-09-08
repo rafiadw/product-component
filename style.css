@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  width: 560px;
+  height: 400px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+}
+
+.type {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-size: 1.8em;
+  margin: 16px 0;
+  line-height: 26px;
+  color: hsl(212, 21%, 14%);
+  letter-spacing: 2px;
+}
+
+.info {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.infoPrice {
+  display: flex;
+  align-items: center;
+}
+
+.newPrice {
+  font-family: "Fraunces", serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  margin-right: 18px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.btn {
+  display: flex;
+  margin-top: 20px;
+  height: 3rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  background-color: hsl(158, 36%, 37%);
+  justify-content: center;
+  align-items: center;
+}
+
+.btn img {
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 540px) {
+  .box {
+    flex-direction: column;
+    width: 380px;
+    height: 600px;
+  }
+
+  .box img {
+    height: 230px;
+    object-fit: cover;
+  }
+
+  .btn img {
+    width: 20px;
+    height: 20px;
+  }
+}
