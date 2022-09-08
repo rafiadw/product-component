@@ -52,6 +52,7 @@ body {
   margin: 16px 0;
   line-height: 26px;
   color: hsl(212, 21%, 14%);
+  letter-spacing: 0.5px;
 }
 
 .info {
