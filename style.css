@@ -30,6 +30,10 @@ body {
   overflow: hidden;
 }
 
+.box img {
+  filter: brightness(80%);
+}
+
 .content {
   flex: 1;
   display: flex;
